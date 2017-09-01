@@ -502,6 +502,7 @@ span.service-price-style{
     width: 275px;
   }
   .flat-logo-nav{
+    float:none;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -517,6 +518,9 @@ span.service-price-style{
     margin-top: 8rem;
     margin-left: 10rem;
     margin-right: -4rem;
+  }
+  .app-call-style{
+    text-align: center;
   }
   .philo-content{
     background-color: #000;
@@ -585,4 +589,5 @@ span.service-price-style{
     border-top: 2px solid white;
     padding: 0 1rem;
   }
+
 }
