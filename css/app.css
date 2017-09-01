@@ -1,0 +1,588 @@
+
+
+body, html{
+
+  background: url(../img/bgdark.jpg) no-repeat;
+  height: 100%;
+    /* Center and scale the image nicely */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*-webkit-background-size: cover;*/
+}
+p, label{
+  color: white;
+}
+
+/* NAVIGATION */
+nav {
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 50px 0;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover,
+nav ul li a:visited{
+  color: #d8d8d8;
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+a.phone{
+  color: white;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+.logo{
+  text-align: center;
+}
+.img-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto ;
+  margin-top: -3rem;
+  width: 500px;
+}
+
+
+.button-rounded-hover {
+  border: 0;
+  border-radius: 10px;
+  padding: 3rem 5rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: all 0.35s ease;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  color: white;
+}
+
+
+.button-rounded-hover:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  background-color: #fefefe;
+  transition: all 0.3s;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.button-rounded-hover:after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border: 5px solid #fff;
+  content: '';
+  border-radius: inherit;
+  color: white;
+}
+
+.button-rounded-hover:hover,
+.button-rounded-hover:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.button-rounded-hover:hover:before,
+.button-rounded-hover:focus:before {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 0.25;
+}
+.about-us-pos{
+  margin-left: 17rem;
+}
+.book-pos{
+  margin-right: 8rem;
+}
+.home-info-style{
+  text-align: center;
+  color: white;
+  padding-top: 5rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.09rem;
+}
+/***********************PHILOSOPHY***************************************PHILOSOPHY***************************/
+.flat-logo-nav{
+  float: left;
+  margin-left: 12rem;
+  padding-top: 20px;
+}
+.philo-content{
+  background-color: #000;
+  background:rgba(0,0,0,0.8);
+  border: .4rem solid black;
+  /*opacity: 0.8;*/
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-left: 15rem;
+  height: 750px;
+  font-family: 'Quicksand', sans-serif;
+}
+.philo-header{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-bottom-style: solid;
+}
+.philo-font{
+
+}
+.same-pic{
+  background: #000;
+   opacity: 1;
+
+}
+
+
+
+/***********PHILOSOPHY******************PHILOSOPHY************************************************************/
+/***********APPPSSSS***************************************AAAPPPPPSSS**************************************************************/
+
+.apps-policy-header{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-bottom-style: solid;
+  text-align: center;
+}
+
+.apps-header{
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  border-bottom: .07rem solid white;
+  /*border-bottom-style: solid;*/
+  text-align: center;
+}
+.apps-font{
+  text-align: center;
+  color: white;
+}
+
+.apps-content{
+  background-color: #000;
+  background:rgba(0,0,0,0.8);
+  border: .4rem solid black;
+  /*opacity: 0.8;*/
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-left: 15rem;
+  height: 1350px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.policy-style-head{
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  margin-bottom: -.01rem;
+}
+
+.policy-style-sub{
+color: white;
+font-family: 'Quicksand', sans-serif;
+}
+
+
+/***********APPPSSSS***************************************AAAPPPPPSSS**************************************************************/
+
+/***SERVICES***********************************SERVICES***********************SERVICES*************************************SERVICES****************************************************/
+.service-content{
+  background-color: #000;
+  background:rgba(0,0,0,0.8);
+  border: .4rem solid black;
+  /*opacity: 0.8;*/
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-left: 15rem;
+  height: 1550px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+.service-header{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-bottom-style: solid;
+  text-align: center;
+}
+.service-style-header{
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  border-bottom: .07rem solid white;
+  /*border-bottom-style: solid;*/
+  text-align: center;
+}
+span.service-style-font{
+  float: left;
+}
+span.service-price-style{
+  float: right;
+}
+
+.dotted{
+  /*border-bottom: 2px dotted #ccc;
+   line-height: .01em;
+   text-align: right;
+   clear: both;
+   margin: 0.005em 0 0 0;*/
+}
+.service-centered{
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/****************SERVICES***************************************SERVICES**************************************SERVICES*********************************************************/
+/****************CONTACT***************************************CONTACT**************************************CONTACT*********************************************************/
+
+.contact-content{
+  background-color: #000;
+  background:rgba(0,0,0,0.8);
+  border: .4rem solid black;
+  /*opacity: 0.8;*/
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-left: 15rem;
+  height: 850px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+.contact-form-field{
+  border-radius: .4rem;
+  border-color: white;
+  box-shadow: none;
+  background-color: black;
+  color: white;
+}
+.contact-form-field:focus{
+  background-color: white;
+  color: black;
+  border-color: black;
+  box-shadow: none;
+}
+.contact-submit{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  border-color: white;
+  color: white;
+  text-align: center;
+
+}
+.contact-submit:hover{
+  background-color: black;
+  opacity: .8;
+  color: white;
+}
+.contact-vert-divide{
+  /*border-left: 2px solid white;*/
+  /*padding: 0 1rem;*/
+}
+.contact-header{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-bottom-style: solid;
+  text-align: center;
+}
+.contact-map{
+  padding-left: 3rem;
+}
+
+.contact-horiz-divide{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: .09rem;
+  border-bottom-style: solid;
+  text-align: center;
+}
+.contact-map-form{
+  margin-bottom: -1rem;
+}
+.contact-app-locate{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact-sub-head{
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+
+
+/****************CONTACT***************************************CONTACT**************************************CONTACT*********************************************************/
+/****************PRODUCTS***************************************PRODUCTS**************************************PRODUCTS*********************************************************/
+
+.prod-content{
+  background-color: #000;
+  background:rgba(0,0,0,0.8);
+  border: .4rem solid black;
+  /*opacity: 0.8;*/
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-left: 15rem;
+  height: 1000px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+.fullscreen-image-slider .orbit-image {
+  width: 100%;
+  height: 50vh;
+}
+
+.fullscreen-image-slider .orbit-caption {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  background: none;
+  text-align: center;
+  color: #fefefe;
+  font-weight: bold;
+}
+.prod-header{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-bottom-style: solid;
+}
+.prod-sub-header{
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  border-bottom: .07rem solid white;
+  text-align: center;
+}
+.prod-pro{
+  text-align: center;
+}
+.prod-non-pro{
+  text-align: center;
+  -moz-column-count: 2;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 20px;
+      column-count: 2;
+      column-gap: 20px;
+}
+/****************PRODUCTS***************************************PRODUCTS**************************************PRODUCTS*********************************************************/
+/****************GALLERY***************************************GALLERY**************************************GALLERY*********************************************************/
+.gal-content{
+  background-color: #000;
+  background:rgba(0,0,0,0.8);
+  border: .4rem solid black;
+  /*opacity: 0.8;*/
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin-left: 15rem;
+  height: 850px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+.gal-header{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-bottom-style: solid;
+  text-align: center;
+}
+
+
+/****************GALLERY***************************************GALLERY**************************************GALLERY*********************************************************/
+
+
+
+/******************************************************************************************************************************************************/
+@media (max-width: 600px) {
+  .img-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto ;
+    margin-top: -3rem;
+    width: 275px;
+  }
+  .flat-logo-nav{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+  }
+  .about-us-pos{
+    text-align: center;
+    /*margin: 0 auto;*/
+    margin-left: 0rem;
+  }
+  .book-pos{
+    margin-top: 8rem;
+    margin-left: 10rem;
+    margin-right: -4rem;
+  }
+  .philo-content{
+    background-color: #000;
+    background:rgba(0,0,0,0.8);
+    border: .4rem solid black;
+    /*opacity: 0.8;*/
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: 0rem;
+    height: 1250px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .prod-content{
+    background-color: #000;
+    background:rgba(0,0,0,0.8);
+    border: .4rem solid black;
+    /*opacity: 0.8;*/
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: 0rem;
+    height: 1500px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+  }
+
+  .service-content{
+    background-color: #000;
+    background:rgba(0,0,0,0.8);
+    border: .4rem solid black;
+    /*opacity: 0.8;*/
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: 0rem;
+    height: 2400px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+  }
+  .service-centered{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .apps-content{
+    background-color: #000;
+    background:rgba(0,0,0,0.8);
+    border: .4rem solid black;
+    /*opacity: 0.8;*/
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: 0rem;
+    height: 2250px;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+  .contact-content{
+    background-color: #000;
+    background:rgba(0,0,0,0.8);
+    border: .4rem solid black;
+    /*opacity: 0.8;*/
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: 0rem;
+    height: 1700px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+  }
+  .contact-divide{
+    border-top: 2px solid white;
+    padding: 0 1rem;
+  }
+}
