@@ -473,7 +473,7 @@ span.service-price-style{
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 850px;
+  height: 1000px;
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
@@ -485,6 +485,72 @@ span.service-price-style{
   border-bottom-style: solid;
   text-align: center;
 }
+
+.featured-image-block-grid-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-image-block {
+  margin-bottom: 20px;
+}
+
+.featured-image-block .featured-image-block-title {
+  font-weight: 600;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #404040;
+}
+
+.featured-image-block a:hover p {
+  color: #1779ba;
+}
+img.gal-photo-size{
+  width: 320px;
+  height: 320px;
+}
+
+.pagination-circular li.current {
+  border: 1px solid white;
+  border-radius: 5000px;
+  padding: 0.285em 0.8em;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
+
+.pagination-circular li.disabled {
+  border: 1px solid white;
+  padding: 0.285em 0.8em;
+  border-radius: 5000px;
+  font-size: 18px;
+}
+
+.pagination-circular a {
+  border-radius: 5000px;
+  padding: 0.285em 0.8em;
+  border: 1px solid white;
+  font-size: 18px;
+  color: white;
+}
+
+.pagination-circular li:not(.disabled):hover a {
+  background: white;
+  color: black;
+}
+
+.pagination-circular li a {
+  transition: background 0.15s ease-in, color 0.15s ease-in;
+}
+
+.gal-page{
+  text-align: center;
+}
+
+
+
 
 
 /****************GALLERY***************************************GALLERY**************************************GALLERY*********************************************************/
@@ -588,6 +654,17 @@ span.service-price-style{
   .contact-divide{
     border-top: 2px solid white;
     padding: 0 1rem;
+  }
+  .gal-content{
+    background-color: #000;
+    background:rgba(0,0,0,0.8);
+    border: .4rem solid black;
+    /*opacity: 0.8;*/
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    margin-left: 0rem;
+    height: 1000px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
   }
 
 }
