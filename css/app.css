@@ -207,7 +207,7 @@ a.phone{
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 750px;
+  height: 775px;
   font-family: 'Quicksand', sans-serif;
 }
 .philo-header{
@@ -285,7 +285,7 @@ font-family: 'Quicksand', sans-serif;
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 1550px;
+  height: 1650px;
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
@@ -335,7 +335,7 @@ span.service-price-style{
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 850px;
+  height: 900px;
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
@@ -554,7 +554,23 @@ img.gal-photo-size{
 
 
 /****************GALLERY***************************************GALLERY**************************************GALLERY*********************************************************/
+/****************FOOTER***************************************FOOTER**************************************FOOTER*********************************************************/
 
+.footer{
+  /*background:rgba(0,0,0,0.8);*/
+  float:none;
+  clear: both;
+  padding-top: 2rem;
+
+}
+.footer-style{
+  color: #fff;
+
+}
+.footer-style:hover{
+  color: #d8d8d8;
+}
+/****************FOOTER***************************************FOOTER**************************************FOOTER*********************************************************/
 
 
 /******************************************************************************************************************************************************/
