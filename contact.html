@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Vivanti Hair Studio</title>
+    <link rel="shortcut icon" type="image/png" href="img/favLogo.jpg"/>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://use.fontawesome.com/4b5a08b597.js"></script>
@@ -49,7 +50,21 @@
       <div class="row contact-map-form">
         <div class="small-12 medium-6 column down">
           <!-- <h1>Hi Please Contact Me! </h1>-->
+            <script type="">
+            function myMap(){
+            var myCenter = new google.maps.LatLng(38.985040, -77.026929);
+            var mapProp = {center:myCenter, zoom:18, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.SATELLITE};
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker({position:myCenter});
+            marker.setMap(map);
+
+            marker.addListener('click', function() {
+              window.open("https://www.google.com/maps/place/7894+Georgia+Ave,+Silver+Spring,+MD+20910/@38.9850417,-77.0291255,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c89663703043:0x31231f5888213c63!8m2!3d38.9850417!4d-77.0269315");
+              });
+            }
+            </script>
             <div class="" id="googleMap" style="height:525px;width:100%;"></div>
+           <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtcEcUwF6PCCC8cfLDXsDlv1WK29li8Go&callback=myMap"></script> -->
            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtcEcUwF6PCCC8cfLDXsDlv1WK29li8Go&callback=myMap"></script>
         </div>
         <div class="small-12 medium-6 column contact-vert-divide ">
@@ -87,7 +102,7 @@
             <ul class="menu">
               <li><a href="https://www.facebook.com/vivantihairstudio/" target="_blank"><i class="fa fa-facebook-official footer-style" aria-hidden="true"></i> </a></li>
               <li><a href="https://www.yelp.com/biz/vivanti-hair-studio-silver-spring" target="_blank"><i class="fa fa-yelp footer-style" aria-hidden="true"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fa fa-linkedin-square  footer-style" aria-hidden="true"></i></a></li>
+              <!-- <li><a href="#" target="_blank"><i class="fa fa-linkedin-square  footer-style" aria-hidden="true"></i></a></li> -->
               <!-- snapchat -->
             </ul>
           </div>
