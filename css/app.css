@@ -34,9 +34,10 @@ nav ul li a {
   padding: 15px;
   text-decoration: none;
   color: #fff;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   margin: 0 10px;
+  font-family: 'Raleway', sans-serif;
 }
 nav ul li a,
 nav ul li a:after,
@@ -217,6 +218,7 @@ a.phone{
   border-bottom-style: solid;
 }
 .philo-font{
+padding-top: 3rem;
 
 }
 .same-pic{
@@ -250,6 +252,10 @@ a.phone{
   text-align: center;
   color: white;
 }
+.app-call-style{
+  text-align: center;
+  font-size: 1.14rem;
+}
 
 .apps-content{
   background-color: #000;
@@ -258,7 +264,7 @@ a.phone{
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 1350px;
+  height: 1370px;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -285,7 +291,8 @@ font-family: 'Quicksand', sans-serif;
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 1650px;
+  /*padding-bottom: 3rem;*/
+  /*height: 1650px;*/
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
@@ -304,6 +311,9 @@ font-family: 'Quicksand', sans-serif;
   /*border-bottom-style: solid;*/
   text-align: center;
 }
+.service-notes{
+  text-align: center;
+}
 span.service-style-font{
   float: left;
 }
@@ -319,10 +329,41 @@ span.service-price-style{
    margin: 0.005em 0 0 0;*/
 }
 .service-centered{
-  width: 50%;
+  /*width: 100%;*/
   height: auto;
-  text-align: center;
-  margin: 0 auto;
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+  padding-left: 19rem;
+  text-align: justify;
+
+}
+button.accordion {
+    background-color: #eee;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+a.service-menu-style{
+  color: white;
+  font-size: 1.2rem;
 }
 
 /****************SERVICES***************************************SERVICES**************************************SERVICES*********************************************************/
@@ -473,7 +514,7 @@ span.service-price-style{
   /*opacity: 0.8;*/
   filter: alpha(opacity=60); /* For IE8 and earlier */
   margin-left: 15rem;
-  height: 1000px;
+  height: 980px;
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
@@ -611,8 +652,11 @@ img.gal-photo-size{
     /*opacity: 0.8;*/
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin-left: 0rem;
-    height: 1250px;
+    height: 1075px;
     font-family: 'Quicksand', sans-serif;
+  }
+  .philo-font{
+    padding-top: 0rem;
   }
 
   .prod-content{
@@ -622,7 +666,7 @@ img.gal-photo-size{
     /*opacity: 0.8;*/
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin-left: 0rem;
-    height: 1500px;
+    height: 1170px;
     font-family: 'Quicksand', sans-serif;
     color: white;
   }
@@ -634,15 +678,24 @@ img.gal-photo-size{
     /*opacity: 0.8;*/
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin-left: 0rem;
-    height: 2400px;
+    /*height: 2400px;*/
     font-family: 'Quicksand', sans-serif;
     color: white;
   }
-  .service-centered{
+  /*.service-centered{
     width: 100%;
     height: auto;
     text-align: center;
     margin: 0 auto;
+  }*/
+  .service-centered{
+    /*width: 100%;*/
+    height: auto;
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    padding-left: 0rem;
+    text-align: justify;
+
   }
 
   .apps-content{
@@ -652,7 +705,7 @@ img.gal-photo-size{
     /*opacity: 0.8;*/
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin-left: 0rem;
-    height: 2250px;
+    height: 2380px;
     font-family: 'Quicksand', sans-serif;
 
   }
@@ -663,7 +716,7 @@ img.gal-photo-size{
     /*opacity: 0.8;*/
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin-left: 0rem;
-    height: 1700px;
+    height: 1725px;
     font-family: 'Quicksand', sans-serif;
     color: white;
   }
@@ -678,7 +731,7 @@ img.gal-photo-size{
     /*opacity: 0.8;*/
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin-left: 0rem;
-    height: 1000px;
+    height: 1250px;
     font-family: 'Quicksand', sans-serif;
     color: white;
   }
